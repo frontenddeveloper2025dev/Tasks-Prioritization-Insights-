@@ -1,0 +1,132 @@
+/**
+ * =====================================
+ *         UI DESIGN SYSTEM
+ * =====================================
+ * 
+ * Project: TaskMind AI - Smart Task Management
+ * Type: Productivity & AI-Powered Application
+ * 
+ * DESIGN PHILOSOPHY
+ * -----------------
+ * Core Principle: Intelligent simplicity that amplifies human productivity
+ * Design Style: Modern AI-Focused with gentle gradients and smart interactions
+ * Emotion Goal: Focus, clarity, and confidence in task completion
+ * 
+ * VISUAL LANGUAGE
+ * ----------------
+ * Primary Focus: Natural language input with AI-powered intelligence
+ * Hierarchy: Input-first design with contextual task organization
+ * Whitespace: Generous breathing room for mental clarity
+ * 
+ * COLOR SYSTEM
+ * -------------
+ * Primary: 222 47% 11% - Deep intelligence blue for AI features
+ * Secondary: 142 76% 36% - Success green for completed tasks
+ * Accent: 271 81% 56% - Purple for AI processing and insights
+ * Warning: 43 96% 56% - Amber for urgent tasks and deadlines
+ * 
+ * TYPOGRAPHY
+ * ----------
+ * Display: Large, confident headings for dashboard sections
+ * Body: Readable, scannable text for task descriptions
+ * Scale: Clear hierarchy supporting task priority levels
+ * 
+ * INTERACTIONS
+ * ------------
+ * Feedback: Immediate AI processing indicators
+ * Transitions: Smooth 250ms for task state changes
+ * States: Complete coverage including AI processing states
+ * 
+ * ACCESSIBILITY
+ * -------------
+ * Contrast: WCAG AA compliant for all task states
+ * Focus: Clear indicators for keyboard navigation
+ * Motion: Respects user preferences for animations
+ * ====================================
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 222 47% 11%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 222 47% 45%;
+    --accent: 271 81% 56%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 14% 91%;
+    --input: 220 14% 96%;
+    --ring: 222 47% 11%;
+    --chart-1: 222 47% 11%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 271 81% 56%;
+    --chart-4: 43 96% 56%;
+    --chart-5: 0 84% 60%;
+    --radius: 0.75rem
+  ;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%}
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 0 0% 98%;
+    --card: 222 47% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 222 47% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 271 81% 56%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 222 47% 11%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 271 81% 56%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 222 47% 15%;
+    --input: 222 47% 11%;
+    --ring: 271 81% 56%;
+    --chart-1: 271 81% 56%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 222 47% 35%;
+    --chart-4: 43 96% 56%;
+    --chart-5: 0 84% 60%
+  ;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%}
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+}
